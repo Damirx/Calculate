@@ -16,7 +16,11 @@ namespace graphrez
                 case "-":
                     return  new Substraction();
                 case "*":
-                    return new Multiplication(); 
+                    return new Multiplication();
+                case "/":
+                    return new division();
+                case null:
+                    return new NotAct(); 
                 default :
                                throw new Exception("Unknown operration");
 

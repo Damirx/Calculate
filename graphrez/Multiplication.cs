@@ -7,7 +7,7 @@ namespace graphrez
 {
     public class Multiplication : Operation
     {
-        public override int Calculate(int arg1, int arg2)
+        public override double Calculate(double arg1, double arg2)
         {
             return arg1 * arg2;
         }

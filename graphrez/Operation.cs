@@ -7,7 +7,7 @@ namespace graphrez
 {
     public abstract class Operation
     {
-        public abstract int Calculate(int arg1, int arg2);
+        public abstract double Calculate(double arg1, double arg2);
     }
 
 }
