@@ -27,6 +27,8 @@ namespace graphrez
                     return new cosinus();
                 case "(tg)":
                     return new tangens();
+                case "(perevod_vGrad)":
+                    return new perevod_vGrad();
 
                 default :
                                throw new Exception("Unknown operration");

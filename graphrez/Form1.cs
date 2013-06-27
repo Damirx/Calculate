@@ -401,7 +401,37 @@ namespace graphrez
                 richTextBox1.Text = InputOnDisplay;
             }
         }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "(perevod_vGrad)";
+                operation = operation + NewSymbol;
+                //InputOnDisplay = InputOnDisplay + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "(perevod_vGrad)";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                InputOnDisplay = InputOnDisplay + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+        }
+        }
+
+
    
     }
 
-}
+
