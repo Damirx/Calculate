@@ -49,6 +49,7 @@
             this.button17 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -257,11 +258,22 @@
             this.richTextBox1.Text = "Welcome!";
             this.richTextBox1.ZoomFactor = 2F;
             // 
+            // button19
+            // 
+            this.button19.Location = new System.Drawing.Point(203, 232);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(33, 34);
+            this.button19.TabIndex = 30;
+            this.button19.Text = "sin";
+            this.button19.UseVisualStyleBackColor = true;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 306);
+            this.Controls.Add(this.button19);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
@@ -313,6 +325,7 @@
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button button19;
 
 
 

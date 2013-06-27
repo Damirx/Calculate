@@ -321,8 +321,33 @@ namespace graphrez
             argument2 = null;
          }
 
+        private void button19_Click(object sender, EventArgs e)
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "(sin)";
+                operation = operation + NewSymbol;
+                InputOnDisplay = InputOnDisplay + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "(sin)";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                InputOnDisplay = InputOnDisplay + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
 
-
+        }
+   
     }
 
 }

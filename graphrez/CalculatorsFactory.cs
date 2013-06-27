@@ -21,6 +21,9 @@ namespace graphrez
                     return new division();
                 case null:
                     return new NotAct(); 
+                case "(sin)":
+                    return  new sinus();
+
                 default :
                                throw new Exception("Unknown operration");
 
