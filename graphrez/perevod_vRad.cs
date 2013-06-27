@@ -5,7 +5,7 @@ using System.Text;
 
 namespace graphrez
 {
-    public class perevod_vGrad : Operation
+    public class perevod_vRad : Operation
     {
         public override double Calculate(double arg1, double arg2)
         {

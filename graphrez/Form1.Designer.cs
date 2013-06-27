@@ -58,11 +58,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(356, 284);
+            this.label5.Location = new System.Drawing.Point(549, 284);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "V 1.06";
+            this.label5.Text = "V 1.07";
             // 
             // label6
             // 
@@ -171,6 +171,7 @@
             this.button10.TabIndex = 20;
             this.button10.Text = "+/-";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -256,14 +257,14 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(29, 12);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(339, 54);
+            this.richTextBox1.Size = new System.Drawing.Size(558, 54);
             this.richTextBox1.TabIndex = 29;
             this.richTextBox1.Text = "Welcome!";
             this.richTextBox1.ZoomFactor = 2F;
             // 
             // button19
             // 
-            this.button19.Location = new System.Drawing.Point(203, 232);
+            this.button19.Location = new System.Drawing.Point(242, 152);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(33, 34);
             this.button19.TabIndex = 30;
@@ -273,7 +274,7 @@
             // 
             // button20
             // 
-            this.button20.Location = new System.Drawing.Point(242, 232);
+            this.button20.Location = new System.Drawing.Point(242, 192);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(33, 34);
             this.button20.TabIndex = 31;
@@ -283,7 +284,7 @@
             // 
             // button21
             // 
-            this.button21.Location = new System.Drawing.Point(242, 192);
+            this.button21.Location = new System.Drawing.Point(242, 232);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(33, 34);
             this.button21.TabIndex = 32;
@@ -293,11 +294,11 @@
             // 
             // button22
             // 
-            this.button22.Location = new System.Drawing.Point(281, 232);
+            this.button22.Location = new System.Drawing.Point(515, 232);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(72, 34);
             this.button22.TabIndex = 33;
-            this.button22.Text = "rad=>grad";
+            this.button22.Text = "grad=>rad";
             this.button22.UseVisualStyleBackColor = true;
             this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
@@ -305,7 +306,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(411, 306);
+            this.ClientSize = new System.Drawing.Size(604, 306);
             this.Controls.Add(this.button22);
             this.Controls.Add(this.button21);
             this.Controls.Add(this.button20);

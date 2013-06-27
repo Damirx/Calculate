@@ -16,7 +16,7 @@ namespace graphrez
         public static string argument2=null; //мусор, которому недолго жить
         public static string InputOnDisplay=null; //мусор, которому недолго жить
         public static string result = null; //мусор, которому недолго жить
-
+  
         public Form1()
         {
             InitializeComponent();
@@ -333,7 +333,6 @@ namespace graphrez
             {
                 NewSymbol = "(sin)";
                 operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
             else
@@ -342,10 +341,17 @@ namespace graphrez
                 NewSymbol = "(sin)";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
             }
-
+            double value1 = Convert.ToDouble(argument1);
+            double value2 = Convert.ToDouble(argument2);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1, value2);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
         }
 
         private void button20_Click(object sender, EventArgs e)
@@ -360,7 +366,6 @@ namespace graphrez
             {
                 NewSymbol = "(cos)";
                 operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
             else
@@ -369,11 +374,18 @@ namespace graphrez
                 NewSymbol = "(cos)";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
-
-
+            double value1 = Convert.ToDouble(argument1);
+            double value2 = Convert.ToDouble(argument2);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1, value2);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
         }
 
         private void button21_Click(object sender, EventArgs e)
@@ -388,7 +400,6 @@ namespace graphrez
             {
                 NewSymbol = "(tg)";
                 operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
             else
@@ -397,9 +408,18 @@ namespace graphrez
                 NewSymbol = "(tg)";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
+            double value1 = Convert.ToDouble(argument1);
+            double value2 = Convert.ToDouble(argument2);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1, value2);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
         }
 
         private void button22_Click(object sender, EventArgs e)
@@ -413,19 +433,67 @@ namespace graphrez
             }
             if (operation == null)
             {
-                NewSymbol = "(perevod_vGrad)";
+                NewSymbol = "(perevod_vRad)";
                 operation = operation + NewSymbol;
-                //InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
             else
             {
                 operation = null;
-                NewSymbol = "(perevod_vGrad)";
+                NewSymbol = "(perevod_vRad)";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            double value2 = Convert.ToDouble(argument2);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1, value2);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+            }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                if (argument1 == null) argument1="0";
+                if (argument1.Contains("-") == true)
+                {
+                    argument1 = argument1.Remove(0, 1); ;
+                    InputOnDisplay = argument1;
+                    richTextBox1.Text = InputOnDisplay;
+                }
+                else
+                {
+                    argument1 = argument1.Insert(0,"-");
+                    InputOnDisplay = argument1;
+                    richTextBox1.Text = InputOnDisplay;
+                }
+            }
+            else
+            {
+                if (argument2.Contains("-") == true)
+                {
+                    argument2 = argument2.Remove(0, 1); ;
+                    InputOnDisplay = argument1+operation+argument2;
+                    richTextBox1.Text = InputOnDisplay;
+                }
+                else
+                {
+                    argument2 = argument2.Insert(0, "-");
+                    InputOnDisplay = argument1+operation+argument2;
+                    richTextBox1.Text = InputOnDisplay;
+                }
             }
         }
         }

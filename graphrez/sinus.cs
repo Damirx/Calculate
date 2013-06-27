@@ -11,6 +11,5 @@ namespace graphrez
        {
            return (Math.Sin(arg1));
        }
-
     }
 }
