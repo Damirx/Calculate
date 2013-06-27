@@ -50,6 +50,8 @@
             this.button18 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button19 = new System.Windows.Forms.Button();
+            this.button20 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -268,11 +270,33 @@
             this.button19.UseVisualStyleBackColor = true;
             this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
+            // button20
+            // 
+            this.button20.Location = new System.Drawing.Point(242, 232);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(33, 34);
+            this.button20.TabIndex = 31;
+            this.button20.Text = "cos";
+            this.button20.UseVisualStyleBackColor = true;
+            this.button20.Click += new System.EventHandler(this.button20_Click);
+            // 
+            // button21
+            // 
+            this.button21.Location = new System.Drawing.Point(242, 192);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(33, 34);
+            this.button21.TabIndex = 32;
+            this.button21.Text = "tg";
+            this.button21.UseVisualStyleBackColor = true;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 306);
+            this.Controls.Add(this.button21);
+            this.Controls.Add(this.button20);
             this.Controls.Add(this.button19);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button18);
@@ -326,6 +350,8 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button20;
+        private System.Windows.Forms.Button button21;
 
 
 

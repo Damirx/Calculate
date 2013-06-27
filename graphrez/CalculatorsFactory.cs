@@ -23,6 +23,10 @@ namespace graphrez
                     return new NotAct(); 
                 case "(sin)":
                     return  new sinus();
+                case "(cos)":
+                    return new cosinus();
+                case "(tg)":
+                    return new tangens();
 
                 default :
                                throw new Exception("Unknown operration");
