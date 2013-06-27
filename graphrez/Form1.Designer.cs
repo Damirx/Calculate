@@ -58,16 +58,16 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "V 1.00";
+            this.label5.Text = "V 1.05";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(12, 284);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 13);
+            this.label6.Size = new System.Drawing.Size(87, 13);
             this.label6.TabIndex = 9;
-            this.label6.Text = "Made by ZS-IA-ND-SV-FA";
+            this.label6.Text = "Made by SVADA";
             // 
             // button1
             // 
@@ -254,13 +254,14 @@
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(339, 54);
             this.richTextBox1.TabIndex = 29;
-            this.richTextBox1.Text = "";
+            this.richTextBox1.Text = "Welcome!";
+            this.richTextBox1.ZoomFactor = 2F;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(406, 306);
+            this.ClientSize = new System.Drawing.Size(411, 306);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button17);
