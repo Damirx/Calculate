@@ -65,6 +65,7 @@
     <Compile Include="BinaryCalculatorsFactory.cs" />
     <Compile Include="cosinus.cs" />
     <Compile Include="division.cs" />
+    <Compile Include="Exp.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

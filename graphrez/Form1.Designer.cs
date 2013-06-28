@@ -59,6 +59,7 @@
             this.button25 = new System.Windows.Forms.Button();
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
+            this.FAR = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -366,11 +367,22 @@
             this.button27.UseVisualStyleBackColor = true;
             this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
+            // FAR
+            // 
+            this.FAR.Location = new System.Drawing.Point(366, 152);
+            this.FAR.Name = "FAR";
+            this.FAR.Size = new System.Drawing.Size(33, 34);
+            this.FAR.TabIndex = 41;
+            this.FAR.Text = "е ͯ";
+            this.FAR.UseVisualStyleBackColor = true;
+            this.FAR.Click += new System.EventHandler(this.FAR_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 306);
+            this.Controls.Add(this.FAR);
             this.Controls.Add(this.button27);
             this.Controls.Add(this.button26);
             this.Controls.Add(this.button25);
@@ -442,6 +454,7 @@
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
+        private System.Windows.Forms.Button FAR;
 
 
 

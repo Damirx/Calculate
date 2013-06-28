@@ -25,6 +25,8 @@ namespace graphrez
                     return new Arccos();
                 case "Arctang":
                     return new Arctang();
+                case "Exp":
+                    return new Exp();
                 default:
                     throw new Exception("Unknown operration");
 

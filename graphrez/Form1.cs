@@ -645,6 +645,39 @@ namespace graphrez
             argument2 = null;
         }
 
+        private void FAR_Click(object sender, EventArgs e) //e в степени х
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "Exp";
+                operation = operation + NewSymbol;
+            }
+            else
+            {
+                operation=null;
+                NewSymbol = "Exp";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+  
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+         }
+        
+
         }
 
       
