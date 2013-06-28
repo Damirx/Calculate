@@ -581,6 +581,38 @@ namespace graphrez
             argument2 = null;
         }
 
+        private void button26_Click(object sender, EventArgs e)
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "Arccos";
+                operation = operation + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "Arccos";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+        }
+
       
         }
  }

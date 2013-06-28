@@ -21,7 +21,8 @@ namespace graphrez
                     return new Perevod_vRad();
                 case "arcsinus":
                     return new Arcsinus();
-                // case
+                case "Arccos":
+                    return new Arccos();
                 default:
                     throw new Exception("Unknown operration");
 

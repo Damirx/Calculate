@@ -354,6 +354,7 @@
             this.button26.TabIndex = 39;
             this.button26.Text = "arcos";
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
             // button27
             // 
