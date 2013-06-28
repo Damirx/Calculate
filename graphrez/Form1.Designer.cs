@@ -67,6 +67,11 @@
             this.button32 = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.button33 = new System.Windows.Forms.Button();
+            this.button34 = new System.Windows.Forms.Button();
+            this.button36 = new System.Windows.Forms.Button();
+            this.button35 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -76,7 +81,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "V 1.08";
+            this.label5.Text = "V 1.09";
             // 
             // label6
             // 
@@ -391,7 +396,7 @@
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(33, 34);
             this.button28.TabIndex = 42;
-            this.button28.Text = "X²";
+            this.button28.Text = "x²";
             this.button28.UseVisualStyleBackColor = true;
             this.button28.Click += new System.EventHandler(this.button28_Click);
             // 
@@ -411,7 +416,7 @@
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(33, 34);
             this.button30.TabIndex = 44;
-            this.button30.Text = "Xᵞ";
+            this.button30.Text = "y ͯ";
             this.button30.UseVisualStyleBackColor = true;
             this.button30.Click += new System.EventHandler(this.button30_Click);
             // 
@@ -421,19 +426,19 @@
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(33, 34);
             this.button31.TabIndex = 45;
-            this.button31.Text = "ᵞ√";
+            this.button31.Text = " ͯ √";
             this.button31.UseVisualStyleBackColor = true;
             this.button31.Click += new System.EventHandler(this.button31_Click);
             // 
             // button32
             // 
-            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button32.Location = new System.Drawing.Point(366, 305);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(33, 34);
             this.button32.TabIndex = 46;
             this.button32.Text = "!";
-            this.button32.UseVisualStyleBackColor = true;
+            this.button32.UseVisualStyleBackColor = false;
             this.button32.Click += new System.EventHandler(this.button32_Click);
             // 
             // richTextBox2
@@ -454,11 +459,66 @@
             this.richTextBox3.Text = "Welcome!";
             this.richTextBox3.ZoomFactor = 2F;
             // 
+            // button33
+            // 
+            this.button33.Location = new System.Drawing.Point(405, 265);
+            this.button33.Name = "button33";
+            this.button33.Size = new System.Drawing.Size(33, 34);
+            this.button33.TabIndex = 49;
+            this.button33.Text = "Log10";
+            this.button33.UseVisualStyleBackColor = true;
+            this.button33.Click += new System.EventHandler(this.button33_Click);
+            // 
+            // button34
+            // 
+            this.button34.Location = new System.Drawing.Point(405, 305);
+            this.button34.Name = "button34";
+            this.button34.Size = new System.Drawing.Size(33, 34);
+            this.button34.TabIndex = 50;
+            this.button34.Text = "Log2";
+            this.button34.UseVisualStyleBackColor = true;
+            this.button34.Click += new System.EventHandler(this.button34_Click);
+            // 
+            // button36
+            // 
+            this.button36.Location = new System.Drawing.Point(405, 225);
+            this.button36.Name = "button36";
+            this.button36.Size = new System.Drawing.Size(33, 34);
+            this.button36.TabIndex = 52;
+            this.button36.Text = "Ln";
+            this.button36.UseVisualStyleBackColor = true;
+            this.button36.Click += new System.EventHandler(this.button36_Click);
+            // 
+            // button35
+            // 
+            this.button35.Location = new System.Drawing.Point(515, 305);
+            this.button35.Name = "button35";
+            this.button35.Size = new System.Drawing.Size(72, 34);
+            this.button35.TabIndex = 53;
+            this.button35.Text = "rad<=grad";
+            this.button35.UseVisualStyleBackColor = true;
+            this.button35.Click += new System.EventHandler(this.button35_Click);
+            // 
+            // button37
+            // 
+            this.button37.Location = new System.Drawing.Point(405, 345);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(33, 34);
+            this.button37.TabIndex = 54;
+            this.button37.Text = "Logy";
+            this.button37.UseVisualStyleBackColor = true;
+            this.button37.Click += new System.EventHandler(this.button37_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 412);
+            this.Controls.Add(this.button37);
+            this.Controls.Add(this.button35);
+            this.Controls.Add(this.button36);
+            this.Controls.Add(this.button34);
+            this.Controls.Add(this.button33);
             this.Controls.Add(this.richTextBox3);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.button32);
@@ -546,6 +606,11 @@
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.RichTextBox richTextBox2;
         private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.Button button33;
+        private System.Windows.Forms.Button button34;
+        private System.Windows.Forms.Button button36;
+        private System.Windows.Forms.Button button35;
+        private System.Windows.Forms.Button button37;
 
 
 

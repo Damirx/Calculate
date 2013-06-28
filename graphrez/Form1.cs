@@ -550,7 +550,7 @@ namespace graphrez
             label1.Text = "Введите угол в радианах";
         }
 
-        private void button25_Click(object sender, EventArgs e)  //arcsinus числа
+        private void button25_Click(object sender, EventArgs e)  //Арксинус
         {
             string NewSymbol;
             if (result != null)
@@ -582,7 +582,7 @@ namespace graphrez
             argument2 = null;
         }
 
-        private void button26_Click(object sender, EventArgs e)
+        private void button26_Click(object sender, EventArgs e) //Арккосинус
         {
             string NewSymbol;
             if (result != null)
@@ -614,7 +614,7 @@ namespace graphrez
             argument2 = null;
         }
 
-        private void button27_Click(object sender, EventArgs e)
+        private void button27_Click(object sender, EventArgs e) //Арктангенс
         {
             string NewSymbol;
             if (result != null)
@@ -678,7 +678,7 @@ namespace graphrez
             argument2 = null;
         }
 
-        private void button28_Click(object sender, EventArgs e)
+        private void button28_Click(object sender, EventArgs e) //Квадрат
         {
             string NewSymbol;
             if (result != null)
@@ -710,7 +710,7 @@ namespace graphrez
             argument2 = null;
         }
 
-        private void button29_Click(object sender, EventArgs e)
+        private void button29_Click(object sender, EventArgs e) //Квадратный корень
         {
             string NewSymbol;
             if (result != null)
@@ -742,7 +742,7 @@ namespace graphrez
             argument2 = null;
         }
 
-        private void button30_Click(object sender, EventArgs e)
+        private void button30_Click(object sender, EventArgs e) //Возведение в степень
         {
             string NewSymbol;
             if (result != null)
@@ -768,7 +768,7 @@ namespace graphrez
             }
         }
 
-        private void button31_Click(object sender, EventArgs e)
+        private void button31_Click(object sender, EventArgs e) //Извлечение корня второго аргумента
         {
             string NewSymbol;
             if (result != null)
@@ -794,7 +794,7 @@ namespace graphrez
             }
         }
 
-        private void button32_Click(object sender, EventArgs e)
+        private void button32_Click(object sender, EventArgs e) //Факториал
         {
             string NewSymbol;
             if (result != null)
@@ -826,7 +826,7 @@ namespace graphrez
             argument2 = null;
         }
 
-        private void CommonCalculation(String operation, bool binary)
+        private void CommonCalculation(String operation, bool binary) //Новый вариант ввода
         {
             double firstArg;
             try
@@ -857,6 +857,167 @@ namespace graphrez
                 Operation calc = CalculatorsFactory.Create(operation);
                 richTextBox3.Text = calc.Calculate(firstArg).ToString();    
             }
+        }
+
+        private void button36_Click(object sender, EventArgs e)
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "ln";
+                operation = operation + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "ln";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+        }
+
+        private void button33_Click(object sender, EventArgs e) //Догарифм по основанию 2
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "log10";
+                operation = operation + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "log10";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+        }
+
+        private void button34_Click(object sender, EventArgs e)
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "log2";
+                operation = operation + NewSymbol;
+                InputOnDisplay = InputOnDisplay + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "log2";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                InputOnDisplay = InputOnDisplay + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+        }
+
+        private void button37_Click(object sender, EventArgs e) //Логарифм по основагию второго аргумента
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "log";
+                operation = operation + NewSymbol;
+                InputOnDisplay = InputOnDisplay.Insert(0, NewSymbol) + " ";
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "log";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                InputOnDisplay = InputOnDisplay.Insert(0,NewSymbol)+" ";
+                richTextBox1.Text = InputOnDisplay;
+            }
+            label1.Text = "Введите основание логарифма";
+        }
+
+        private void button35_Click(object sender, EventArgs e) //Перевод радиан в градусы
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "(perevod_vGrad)";
+                operation = operation + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "(perevod_vGrad)";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
         }
     }
 

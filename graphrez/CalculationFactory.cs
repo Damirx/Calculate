@@ -18,7 +18,9 @@ namespace graphrez
                 case "(tg)":
                     return new Tangens();
                 case "(perevod_vRad)":
-                    return new Perevod_vRad();
+                    return new ConvertToRad();
+                case "(perevod_vGrad)":
+                    return new ConvertToGrad();
                 case "arcsinus":
                     return new Arcsinus();
                 case "Arccos":
@@ -33,6 +35,12 @@ namespace graphrez
                     return new Sqrt();
                 case "!":
                     return new Factorial();
+                case "ln":
+                    return new NaturalLogarifm();
+                case "log10":
+                    return new Logarifm10();
+                case "log2":
+                    return new Logarifm2();
                 default:
                     throw new Exception("Unknown operration");
 

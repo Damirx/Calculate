@@ -10,5 +10,4 @@ namespace graphrez
         public abstract double Calculate(double arg1);
 
     }
-
 }

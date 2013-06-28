@@ -5,12 +5,11 @@ using System.Text;
 
 namespace graphrez
 {
-    public class Perevod_vRad : Operation
+    class Logarifm10:Operation
     {
         public override double Calculate(double arg1)
         {
-            return (arg1*3.14/180);
+            return Math.Log10(arg1);
         }
-
     }
 }

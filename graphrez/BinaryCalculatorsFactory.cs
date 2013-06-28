@@ -18,7 +18,7 @@ namespace graphrez
                 case "*":
                     return new Multiplication();
                 case "/":
-                    return new division();
+                    return new Division();
                 case null:
                     return new NotAct(); 
                 case "ToX":
@@ -28,8 +28,9 @@ namespace graphrez
                 case "Pow":
                     return new Pow();
                 case "Izvlech_iz_korn":
-                    return new Izvlech_iz_korn();
-               // case
+                    return new IzvlechIzKorn();
+                case "log":
+                    return new Logy();
                 default :
                                throw new Exception("Unknown operration");
 

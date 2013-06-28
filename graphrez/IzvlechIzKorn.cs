@@ -5,7 +5,7 @@ using System.Text;
 
 namespace graphrez
 {
-    public class Izvlech_iz_korn : BinaryOperation
+    public class IzvlechIzKorn : BinaryOperation
     {
         public override double Calculate(double arg1, double arg2)
         {
