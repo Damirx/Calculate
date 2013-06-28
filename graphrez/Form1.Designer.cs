@@ -60,6 +60,11 @@
             this.button26 = new System.Windows.Forms.Button();
             this.button27 = new System.Windows.Forms.Button();
             this.FAR = new System.Windows.Forms.Button();
+            this.button28 = new System.Windows.Forms.Button();
+            this.button29 = new System.Windows.Forms.Button();
+            this.button30 = new System.Windows.Forms.Button();
+            this.button31 = new System.Windows.Forms.Button();
+            this.button32 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -377,11 +382,68 @@
             this.FAR.UseVisualStyleBackColor = true;
             this.FAR.Click += new System.EventHandler(this.FAR_Click);
             // 
+            // button28
+            // 
+            this.button28.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.button28.Location = new System.Drawing.Point(164, 112);
+            this.button28.Name = "button28";
+            this.button28.Size = new System.Drawing.Size(33, 34);
+            this.button28.TabIndex = 42;
+            this.button28.Text = "X²";
+            this.button28.UseVisualStyleBackColor = true;
+            this.button28.Click += new System.EventHandler(this.button28_Click);
+            // 
+            // button29
+            // 
+            this.button29.Location = new System.Drawing.Point(203, 112);
+            this.button29.Name = "button29";
+            this.button29.Size = new System.Drawing.Size(33, 34);
+            this.button29.TabIndex = 43;
+            this.button29.Text = "√";
+            this.button29.UseVisualStyleBackColor = true;
+            this.button29.Click += new System.EventHandler(this.button29_Click);
+            // 
+            // button30
+            // 
+            this.button30.Location = new System.Drawing.Point(242, 112);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(33, 34);
+            this.button30.TabIndex = 44;
+            this.button30.Text = "Xᵞ";
+            this.button30.UseVisualStyleBackColor = true;
+            this.button30.Click += new System.EventHandler(this.button30_Click);
+            // 
+            // button31
+            // 
+            this.button31.Location = new System.Drawing.Point(281, 112);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(33, 34);
+            this.button31.TabIndex = 45;
+            this.button31.Text = "ᵞ√";
+            this.button31.UseVisualStyleBackColor = true;
+            this.button31.Click += new System.EventHandler(this.button31_Click);
+            // 
+            // button32
+            // 
+            this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button32.Location = new System.Drawing.Point(366, 192);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(33, 34);
+            this.button32.TabIndex = 46;
+            this.button32.Text = "!";
+            this.button32.UseVisualStyleBackColor = true;
+            this.button32.Click += new System.EventHandler(this.button32_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(604, 306);
+            this.Controls.Add(this.button32);
+            this.Controls.Add(this.button31);
+            this.Controls.Add(this.button30);
+            this.Controls.Add(this.button29);
+            this.Controls.Add(this.button28);
             this.Controls.Add(this.FAR);
             this.Controls.Add(this.button27);
             this.Controls.Add(this.button26);
@@ -455,6 +517,11 @@
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button FAR;
+        private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button29;
+        private System.Windows.Forms.Button button30;
+        private System.Windows.Forms.Button button31;
+        private System.Windows.Forms.Button button32;
 
 
 

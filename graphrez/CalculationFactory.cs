@@ -27,6 +27,12 @@ namespace graphrez
                     return new Arctang();
                 case "Exp":
                     return new Exp();
+                case "Sqr":
+                    return new Sqr();
+                case "Sqrt":
+                    return new Sqrt();
+                case "!":
+                    return new Factorial();
                 default:
                     throw new Exception("Unknown operration");
 

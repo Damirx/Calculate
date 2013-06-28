@@ -25,6 +25,10 @@ namespace graphrez
                     return new ToX();
                 case "ToY":
                     return new ToY();
+                case "Pow":
+                    return new Pow();
+                case "Izvlech_iz_korn":
+                    return new Izvlech_iz_korn();
                // case
                 default :
                                throw new Exception("Unknown operration");
