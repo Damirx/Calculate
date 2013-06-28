@@ -11,12 +11,12 @@ namespace graphrez
 {
     public partial class Form1 : Form
     {
-        public static string argument1=null; // первый аргумент (мусор, которому недолго жить)
-        public static string operation=null; // операция (+,- и т.д)(мусор, которому недолго жить)
-        public static string argument2=null; // второй аргумент (мусор, которому недолго жить)
-        public static string InputOnDisplay=null; // то, что выводится на экран (мусор, которому недолго жить)
+        public static string argument1 = null; // первый аргумент (мусор, которому недолго жить)
+        public static string operation = null; // операция (+,- и т.д)(мусор, которому недолго жить)
+        public static string argument2 = null; // второй аргумент (мусор, которому недолго жить)
+        public static string InputOnDisplay = null; // то, что выводится на экран (мусор, которому недолго жить)
         public static string result = null; // результат вычислений (мусор, которому недолго жить)
-  
+
         public Form1()
         {
             InitializeComponent();
@@ -37,26 +37,26 @@ namespace graphrez
             string NewSymbol;
             if (result != null) result = InputOnDisplay = null;
             if (operation == null)
+            {
+                if (argument1 != null)
                 {
-                    if (argument1 != null)
-                        {
-                        NewSymbol = "0";
-                        argument1 = argument1 + NewSymbol;
-                        InputOnDisplay = InputOnDisplay + NewSymbol;
-                        richTextBox1.Text = InputOnDisplay;
+                    NewSymbol = "0";
+                    argument1 = argument1 + NewSymbol;
+                    InputOnDisplay = InputOnDisplay + NewSymbol;
+                    richTextBox1.Text = InputOnDisplay;
                 }
             }
             else
-               {
-                    if (argument2 != null)
-                    {
-                        NewSymbol = "0";
-                        argument2 = argument2 + NewSymbol;
-                        InputOnDisplay = InputOnDisplay + NewSymbol;
-                        richTextBox1.Text = InputOnDisplay;
-                    }
+            {
+                if (argument2 != null)
+                {
+                    NewSymbol = "0";
+                    argument2 = argument2 + NewSymbol;
+                    InputOnDisplay = InputOnDisplay + NewSymbol;
+                    richTextBox1.Text = InputOnDisplay;
                 }
-          }
+            }
+        }
 
         private void button2_Click(object sender, EventArgs e) //кнопка1
         {
@@ -83,7 +83,7 @@ namespace graphrez
         private void button11_Click(object sender, EventArgs e) //кнопка 3
         {
             string NewSymbol;
-            if (result != null) result= InputOnDisplay = null;
+            if (result != null) result = InputOnDisplay = null;
             NewSymbol = "3";
             if (operation == null) argument1 = argument1 + NewSymbol;
             else argument2 = argument2 + NewSymbol;
@@ -103,7 +103,7 @@ namespace graphrez
         }
 
         private void button8_Click(object sender, EventArgs e) //кнопка 5
-        { 
+        {
             string NewSymbol;
             if (result != null) result = InputOnDisplay = null;
             NewSymbol = "5";
@@ -205,7 +205,8 @@ namespace graphrez
 
         private void button13_Click(object sender, EventArgs e) //функция сложения "+"
         {
-            string NewSymbol;
+            CommonCalculation("+", true);
+            /*string NewSymbol;
             if (result != null)
             {
                 argument1 = result;
@@ -226,7 +227,7 @@ namespace graphrez
                 InputOnDisplay = argument1;
                 InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
-            }
+            }*/
         }
 
         private void button15_Click(object sender, EventArgs e) // функция перемножения "*"
@@ -298,14 +299,14 @@ namespace graphrez
             }
             else
             {
-                operation=null;
+                operation = null;
                 NewSymbol = "/";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
                 InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
-         }
+        }
 
         private void button17_Click(object sender, EventArgs e) //Функция вывода результатов "="
         {
@@ -320,7 +321,7 @@ namespace graphrez
             operation = null;
             argument2 = null;
             label1.Text = null;
-         }
+        }
 
         private void button19_Click(object sender, EventArgs e) //Синус
         {
@@ -422,7 +423,7 @@ namespace graphrez
 
         private void button22_Click(object sender, EventArgs e) // Функция перевода градусов  в радианы
         {
-            
+
             string NewSymbol;
             if (result != null)
             {
@@ -452,7 +453,7 @@ namespace graphrez
             argument1 = null;
             operation = null;
             argument2 = null;
-            }
+        }
 
         private void button10_Click(object sender, EventArgs e) //функция "+/-"
         {
@@ -463,7 +464,7 @@ namespace graphrez
             }
             if (operation == null)
             {
-                if (argument1 == null) argument1="0";
+                if (argument1 == null) argument1 = "0";
                 if (argument1.Contains("-") == true)
                 {
                     argument1 = argument1.Remove(0, 1); ;
@@ -472,7 +473,7 @@ namespace graphrez
                 }
                 else
                 {
-                    argument1 = argument1.Insert(0,"-");
+                    argument1 = argument1.Insert(0, "-");
                     InputOnDisplay = argument1;
                     richTextBox1.Text = InputOnDisplay;
                 }
@@ -482,13 +483,13 @@ namespace graphrez
                 if (argument2.Contains("-") == true)
                 {
                     argument2 = argument2.Remove(0, 1); ;
-                    InputOnDisplay = argument1+operation+argument2;
+                    InputOnDisplay = argument1 + operation + argument2;
                     richTextBox1.Text = InputOnDisplay;
                 }
                 else
                 {
                     argument2 = argument2.Insert(0, "-");
-                    InputOnDisplay = argument1+operation+argument2;
+                    InputOnDisplay = argument1 + operation + argument2;
                     richTextBox1.Text = InputOnDisplay;
                 }
             }
@@ -512,14 +513,14 @@ namespace graphrez
             }
             else
             {
-                operation=null;
+                operation = null;
                 NewSymbol = "ToX";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
                 InputOnDisplay = InputOnDisplay + NewSymbol;
                 richTextBox1.Text = InputOnDisplay;
             }
-         }
+        }
 
         private void button23_Click(object sender, EventArgs e) //перевод полярных координат в Y
         {
@@ -660,11 +661,11 @@ namespace graphrez
             }
             else
             {
-                operation=null;
+                operation = null;
                 NewSymbol = "Exp";
                 operation = operation + NewSymbol;
                 InputOnDisplay = argument1;
-  
+
             }
             double value1 = Convert.ToDouble(argument1);
             Operation Calc = CalculatorsFactory.Create(operation);
@@ -675,7 +676,7 @@ namespace graphrez
             argument1 = null;
             operation = null;
             argument2 = null;
-         }
+        }
 
         private void button28_Click(object sender, EventArgs e)
         {
@@ -825,14 +826,42 @@ namespace graphrez
             argument2 = null;
         }
 
-
- 
-
-
+        private void CommonCalculation(String operation, bool binary)
+        {
+            double firstArg;
+            try
+            {
+                firstArg = Convert.ToDouble(richTextBox1.Text);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Не введен первый аргумент!");
+            }
+            
+            if (binary)
+            {
+                double secondArg;
+                try
+                {
+                    secondArg = Convert.ToDouble(richTextBox2.Text);
+                }
+                catch (Exception e)
+                {
+                    throw new Exception("Не введен второй аргумент!");
+                }
+                BinaryOperation calc = BinaryCalculatorsFactory.Create(operation);
+                richTextBox3.Text = calc.Calculate(firstArg, secondArg).ToString();
+            }
+            else
+            {
+                Operation calc = CalculatorsFactory.Create(operation);
+                richTextBox3.Text = calc.Calculate(firstArg).ToString();    
+            }
         }
+    }
 
-      
-        }
+
+}
  
 
 
