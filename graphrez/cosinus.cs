@@ -5,9 +5,9 @@ using System.Text;
 
 namespace graphrez
 {
-    public class cosinus : Operation
+    public class Cosinus : Operation
     {
-        public override double Calculate(double arg1, double arg2)
+        public override double Calculate(double arg1)
         {
             return (Math.Cos(arg1));
         }

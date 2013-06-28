@@ -311,7 +311,7 @@ namespace graphrez
         {
             double value1 = Convert.ToDouble(argument1);
             double value2 = Convert.ToDouble(argument2);
-            Operation Calc = CalculatorsFactory.Create(operation);
+            BinaryOperation Calc = BinaryCalculatorsFactory.Create(operation);
             double localresult = Calc.Calculate(value1, value2);
             result = Convert.ToString(localresult);
             InputOnDisplay = result;
@@ -344,9 +344,8 @@ namespace graphrez
                 InputOnDisplay = argument1;
             }
             double value1 = Convert.ToDouble(argument1);
-            double value2 = Convert.ToDouble(argument2);
             Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1, value2);
+            double localresult = Calc.Calculate(value1);
             result = Convert.ToString(localresult);
             InputOnDisplay = result;
             richTextBox1.Text = InputOnDisplay;
@@ -378,9 +377,8 @@ namespace graphrez
                 richTextBox1.Text = InputOnDisplay;
             }
             double value1 = Convert.ToDouble(argument1);
-            double value2 = Convert.ToDouble(argument2);
             Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1, value2);
+            double localresult = Calc.Calculate(value1);
             result = Convert.ToString(localresult);
             InputOnDisplay = result;
             richTextBox1.Text = InputOnDisplay;
@@ -412,9 +410,8 @@ namespace graphrez
                 richTextBox1.Text = InputOnDisplay;
             }
             double value1 = Convert.ToDouble(argument1);
-            double value2 = Convert.ToDouble(argument2);
             Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1, value2);
+            double localresult = Calc.Calculate(value1);
             result = Convert.ToString(localresult);
             InputOnDisplay = result;
             richTextBox1.Text = InputOnDisplay;
@@ -447,9 +444,8 @@ namespace graphrez
                 richTextBox1.Text = InputOnDisplay;
             }
             double value1 = Convert.ToDouble(argument1);
-            double value2 = Convert.ToDouble(argument2);
             Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1, value2);
+            double localresult = Calc.Calculate(value1);
             result = Convert.ToString(localresult);
             InputOnDisplay = result;
             richTextBox1.Text = InputOnDisplay;
@@ -552,6 +548,40 @@ namespace graphrez
             }
             label1.Text = "Введите угол в радианах";
         }
+
+        private void button25_Click(object sender, EventArgs e)  //arcsinus числа
+        {
+            string NewSymbol;
+            if (result != null)
+            {
+                argument1 = result;
+                result = null;
+            }
+            if (operation == null)
+            {
+                NewSymbol = "arcsinus";
+                operation = operation + NewSymbol;
+                richTextBox1.Text = InputOnDisplay;
+            }
+            else
+            {
+                operation = null;
+                NewSymbol = "arcsinus";
+                operation = operation + NewSymbol;
+                InputOnDisplay = argument1;
+            }
+            double value1 = Convert.ToDouble(argument1);
+            Operation Calc = CalculatorsFactory.Create(operation);
+            double localresult = Calc.Calculate(value1);
+            result = Convert.ToString(localresult);
+            InputOnDisplay = result;
+            richTextBox1.Text = InputOnDisplay;
+            argument1 = null;
+            operation = null;
+            argument2 = null;
+        }
+
+      
         }
  }
 

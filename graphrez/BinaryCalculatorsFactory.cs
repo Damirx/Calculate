@@ -5,9 +5,9 @@ using System.Text;
 
 namespace graphrez
 {
-    public static class CalculatorsFactory
+    public static class BinaryCalculatorsFactory
     {
-        public static Operation Create(string name)
+        public static BinaryOperation Create(string name)
         {
             switch (name)
             {
@@ -21,18 +21,11 @@ namespace graphrez
                     return new division();
                 case null:
                     return new NotAct(); 
-                case "(sin)":
-                    return  new sinus();
-                case "(cos)":
-                    return new cosinus();
-                case "(tg)":
-                    return new tangens();
-                case "(perevod_vRad)":
-                    return new perevod_vRad();
                 case "ToX":
                     return new ToX();
                 case "ToY":
                     return new ToY();
+               // case
                 default :
                                throw new Exception("Unknown operration");
 

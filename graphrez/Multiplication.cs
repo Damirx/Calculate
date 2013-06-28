@@ -5,7 +5,7 @@ using System.Text;
 
 namespace graphrez
 {
-    public class Multiplication : Operation
+    public class Multiplication : BinaryOperation
     {
         public override double Calculate(double arg1, double arg2)
         {

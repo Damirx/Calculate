@@ -58,7 +58,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Addition.cs" />
-    <Compile Include="CalculatorsFactory.cs" />
+    <Compile Include="arcsin.cs" />
+    <Compile Include="CalculationFactory.cs" />
+    <Compile Include="BinaryCalculatorsFactory.cs" />
     <Compile Include="cosinus.cs" />
     <Compile Include="division.cs" />
     <Compile Include="Form1.cs">
@@ -69,6 +71,7 @@
     </Compile>
     <Compile Include="Multiplication.cs" />
     <Compile Include="NotAct.cs" />
+    <Compile Include="BinaryOperation.cs" />
     <Compile Include="Operation.cs" />
     <Compile Include="perevod_vRad.cs" />
     <Compile Include="Program.cs" />
