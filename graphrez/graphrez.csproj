@@ -76,6 +76,8 @@
     <Compile Include="sinus.cs" />
     <Compile Include="Substraction.cs" />
     <Compile Include="tangens.cs" />
+    <Compile Include="ToX.cs" />
+    <Compile Include="ToY.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

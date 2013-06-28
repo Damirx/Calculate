@@ -29,7 +29,10 @@ namespace graphrez
                     return new tangens();
                 case "(perevod_vRad)":
                     return new perevod_vRad();
-
+                case "ToX":
+                    return new ToX();
+                case "ToY":
+                    return new ToY();
                 default :
                                throw new Exception("Unknown operration");
 
