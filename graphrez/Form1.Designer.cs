@@ -364,6 +364,7 @@
             this.button27.TabIndex = 40;
             this.button27.Text = "arctg";
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.Click += new System.EventHandler(this.button27_Click);
             // 
             // Form1
             // 

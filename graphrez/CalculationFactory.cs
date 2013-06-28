@@ -23,6 +23,8 @@ namespace graphrez
                     return new Arcsinus();
                 case "Arccos":
                     return new Arccos();
+                case "Arctang":
+                    return new Arctang();
                 default:
                     throw new Exception("Unknown operration");
 

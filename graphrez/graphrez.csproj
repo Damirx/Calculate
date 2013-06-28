@@ -60,6 +60,7 @@
     <Compile Include="Addition.cs" />
     <Compile Include="Arccos.cs" />
     <Compile Include="arcsin.cs" />
+    <Compile Include="Arctang.cs" />
     <Compile Include="CalculationFactory.cs" />
     <Compile Include="BinaryCalculatorsFactory.cs" />
     <Compile Include="cosinus.cs" />
