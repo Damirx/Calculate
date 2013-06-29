@@ -22,808 +22,103 @@ namespace graphrez
             InitializeComponent();
         }
 
-        private void button18_Click(object sender, EventArgs e) // функция сброса "С"
-        {
-            argument1 = null;
-            operation = null;
-            argument2 = null;
-            InputOnDisplay = null;
-            result = null;
-            richTextBox1.Text = "0";
-        }
-
-        private void button3_Click(object sender, EventArgs e) //кнопка 0
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            if (operation == null)
-            {
-                if (argument1 != null)
-                {
-                    NewSymbol = "0";
-                    argument1 = argument1 + NewSymbol;
-                    InputOnDisplay = InputOnDisplay + NewSymbol;
-                    richTextBox1.Text = InputOnDisplay;
-                }
-            }
-            else
-            {
-                if (argument2 != null)
-                {
-                    NewSymbol = "0";
-                    argument2 = argument2 + NewSymbol;
-                    InputOnDisplay = InputOnDisplay + NewSymbol;
-                    richTextBox1.Text = InputOnDisplay;
-                }
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e) //кнопка1
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "1";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button7_Click(object sender, EventArgs e) //кнопка 2
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "2";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button11_Click(object sender, EventArgs e) //кнопка 3
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "3";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button1_Click(object sender, EventArgs e) //кнопка4
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "4";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button8_Click(object sender, EventArgs e) //кнопка 5
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "5";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button12_Click(object sender, EventArgs e) //кнопка 6
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "6";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button4_Click(object sender, EventArgs e) //кнопка 7
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "7";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button5_Click(object sender, EventArgs e) //кнопка 8
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "8";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button9_Click(object sender, EventArgs e) //кнопка 9
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            NewSymbol = "9";
-            if (operation == null) argument1 = argument1 + NewSymbol;
-            else argument2 = argument2 + NewSymbol;
-            InputOnDisplay = InputOnDisplay + NewSymbol;
-            richTextBox1.Text = InputOnDisplay;
-        }
-
-        private void button6_Click(object sender, EventArgs e) //функция написания дробного числа (запятая) 
-        {
-            string NewSymbol;
-            if (result != null) result = InputOnDisplay = null;
-            if (operation == null)
-            {
-                if (argument1 == null)
-                {
-                    NewSymbol = "0,";
-                    InputOnDisplay = InputOnDisplay + NewSymbol;
-                    richTextBox1.Text = InputOnDisplay;
-                    argument1 = argument1 + NewSymbol;
-                }
-                else
-                {
-                    if (argument1.Contains(",") != true)
-                    {
-                        NewSymbol = ",";
-                        InputOnDisplay = InputOnDisplay + NewSymbol;
-                        richTextBox1.Text = InputOnDisplay;
-                        argument1 = argument1 + NewSymbol;
-                    }
-                }
-            }
-            else
-            {
-                if (argument2 == null)
-                {
-                    NewSymbol = "0,";
-                    InputOnDisplay = InputOnDisplay + NewSymbol;
-                    richTextBox1.Text = InputOnDisplay;
-                    argument2 = argument2 + NewSymbol;
-                }
-                else
-                {
-                    if (argument2.Contains(",") != true)
-                    {
-                        NewSymbol = ",";
-                        InputOnDisplay = InputOnDisplay + NewSymbol;
-                        richTextBox1.Text = InputOnDisplay;
-                        argument2 = argument2 + NewSymbol;
-                    }
-                }
-            }
-        }
-
         private void button13_Click(object sender, EventArgs e) //функция сложения "+"
         {
             CommonCalculation("+", true);
-            /*string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "+";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "+";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }*/
         }
 
         private void button15_Click(object sender, EventArgs e) // функция перемножения "*"
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "*";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "*";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
+            CommonCalculation("*", true);
         }
 
         private void button16_Click(object sender, EventArgs e) //функция вычитания "-"
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "-";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "-";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
+            CommonCalculation("-", true);
+    
         }
 
         private void button14_Click(object sender, EventArgs e) //функция деления "/"
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "/";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "/";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
+            CommonCalculation("/", true);
         }
 
-        private void button17_Click(object sender, EventArgs e) //Функция вывода результатов "="
-        {
-            double value1 = Convert.ToDouble(argument1);
-            double value2 = Convert.ToDouble(argument2);
-            BinaryOperation Calc = BinaryCalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1, value2);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
-            label1.Text = null;
-        }
-
+    
         private void button19_Click(object sender, EventArgs e) //Синус
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "(sin)";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "(sin)";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("(sin)", false);
         }
 
         private void button20_Click(object sender, EventArgs e) //Косинус
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "(cos)";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "(cos)";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("(cos)", false);
         }
 
         private void button21_Click(object sender, EventArgs e) //Тангенс
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "(tg)";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "(tg)";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("(tg)", false);
         }
 
         private void button22_Click(object sender, EventArgs e) // Функция перевода градусов  в радианы
         {
 
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "(perevod_vRad)";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "(perevod_vRad)";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("(perevod_vRad)", false);
         }
-
-        private void button10_Click(object sender, EventArgs e) //функция "+/-"
-        {
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                if (argument1 == null) argument1 = "0";
-                if (argument1.Contains("-") == true)
-                {
-                    argument1 = argument1.Remove(0, 1); ;
-                    InputOnDisplay = argument1;
-                    richTextBox1.Text = InputOnDisplay;
-                }
-                else
-                {
-                    argument1 = argument1.Insert(0, "-");
-                    InputOnDisplay = argument1;
-                    richTextBox1.Text = InputOnDisplay;
-                }
-            }
-            else
-            {
-                if (argument2.Contains("-") == true)
-                {
-                    argument2 = argument2.Remove(0, 1); ;
-                    InputOnDisplay = argument1 + operation + argument2;
-                    richTextBox1.Text = InputOnDisplay;
-                }
-                else
-                {
-                    argument2 = argument2.Insert(0, "-");
-                    InputOnDisplay = argument1 + operation + argument2;
-                    richTextBox1.Text = InputOnDisplay;
-                }
-            }
-        }
-
+     
         private void button24_Click(object sender, EventArgs e) //перевод полярных координат в X
         {
-            string NewSymbol;
-            label1.Text = "Введите угол в радианах";
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "ToX";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "ToX";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
+            CommonCalculation("ToX", true);
         }
 
         private void button23_Click(object sender, EventArgs e) //перевод полярных координат в Y
         {
-            string NewSymbol;
-            label1.Text = "Введите угол в радианах";
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "ToY";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "ToY";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            label1.Text = "Введите угол в радианах";
+            CommonCalculation("ToY", true);
         }
 
         private void button25_Click(object sender, EventArgs e)  //Арксинус
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "arcsinus";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "arcsinus";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("arcsinus", false);
         }
 
         private void button26_Click(object sender, EventArgs e) //Арккосинус
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Arccos";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Arccos";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("Arccos", false);
         }
 
         private void button27_Click(object sender, EventArgs e) //Арктангенс
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Arctang";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Arctang";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("Arctang", false);
         }
 
         private void FAR_Click(object sender, EventArgs e) //e в степени х
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Exp";
-                operation = operation + NewSymbol;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Exp";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("Exp", false);
         }
 
         private void button28_Click(object sender, EventArgs e) //Квадрат
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Sqr";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Sqr";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("Sqr", false);
         }
 
         private void button29_Click(object sender, EventArgs e) //Квадратный корень
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Sqrt";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Sqrt";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("Sqrt", false);
         }
 
         private void button30_Click(object sender, EventArgs e) //Возведение в степень
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Pow";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Pow";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
+            CommonCalculation("Pow", true);
         }
 
         private void button31_Click(object sender, EventArgs e) //Извлечение корня второго аргумента
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "Izvlech_iz_korn";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "Izvlech_iz_korn";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
+            CommonCalculation("Izvlech_iz_korn", true);
+            
         }
 
         private void button32_Click(object sender, EventArgs e) //Факториал
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "!";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "!";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("!", false);
         }
 
         private void CommonCalculation(String operation, bool binary) //Новый вариант ввода
@@ -836,9 +131,8 @@ namespace graphrez
             catch (Exception e)
             {
                 throw new Exception("Не введен первый аргумент!");
-            }
-            
-            if (binary)
+            }  
+            if (binary!=false)
             {
                 double secondArg;
                 try
@@ -861,163 +155,27 @@ namespace graphrez
 
         private void button36_Click(object sender, EventArgs e)
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "ln";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "ln";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("ln", false);
         }
 
-        private void button33_Click(object sender, EventArgs e) //Догарифм по основанию 2
+        private void button33_Click(object sender, EventArgs e) //Догарифм по основанию 10
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "log10";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "log10";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("log10", false);
         }
 
-        private void button34_Click(object sender, EventArgs e)
+        private void button34_Click(object sender, EventArgs e) //Догарифм по основанию 2
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "log2";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "log2";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("log2", false);
         }
 
         private void button37_Click(object sender, EventArgs e) //Логарифм по основагию второго аргумента
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "log";
-                operation = operation + NewSymbol;
-                InputOnDisplay = InputOnDisplay.Insert(0, NewSymbol) + " ";
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "log";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                InputOnDisplay = InputOnDisplay.Insert(0,NewSymbol)+" ";
-                richTextBox1.Text = InputOnDisplay;
-            }
-            label1.Text = "Введите основание логарифма";
+            CommonCalculation("log", true);
         }
 
         private void button35_Click(object sender, EventArgs e) //Перевод радиан в градусы
         {
-            string NewSymbol;
-            if (result != null)
-            {
-                argument1 = result;
-                result = null;
-            }
-            if (operation == null)
-            {
-                NewSymbol = "(perevod_vGrad)";
-                operation = operation + NewSymbol;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            else
-            {
-                operation = null;
-                NewSymbol = "(perevod_vGrad)";
-                operation = operation + NewSymbol;
-                InputOnDisplay = argument1;
-                richTextBox1.Text = InputOnDisplay;
-            }
-            double value1 = Convert.ToDouble(argument1);
-            Operation Calc = CalculatorsFactory.Create(operation);
-            double localresult = Calc.Calculate(value1);
-            result = Convert.ToString(localresult);
-            InputOnDisplay = result;
-            richTextBox1.Text = InputOnDisplay;
-            argument1 = null;
-            operation = null;
-            argument2 = null;
+            CommonCalculation("(perevod_vGrad)", false);
         }
     }
 
