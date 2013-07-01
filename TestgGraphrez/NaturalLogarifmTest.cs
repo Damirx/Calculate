@@ -15,7 +15,6 @@ namespace TestgGraphrez
         {
             NaturalLogarifm calc = new NaturalLogarifm();
             Assert.AreEqual(0.693147, calc.Calculate(2), 0.001);
-
         }
 
         [TestMethod]
@@ -23,10 +22,6 @@ namespace TestgGraphrez
         {
             NaturalLogarifm calc = new NaturalLogarifm();
             Assert.AreEqual(1, calc.Calculate(2.718), 0.001);
-
         }
-
-
-
     }
 }

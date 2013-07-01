@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="037f7d0b-2456-4d0c-b7ba-87f58d3b28ca" name="Александр@ALEXANDR 2013-07-01 20:23:53" runUser="ALEXANDR\Александр" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="0307d9ab-2183-4378-b68a-427592b18606">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Александр_ALEXANDR 2013-07-01 20_23_53">
+      <DeploymentItem filename="C:\Users\Александр\Documents\GitHub\Calculate\graphrez\bin\Debug\graphrez.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-01T20:23:53.1274005+06:00" queuing="2013-07-01T20:23:53.1444015+06:00" start="2013-07-01T20:23:53.1564022+06:00" finish="2013-07-01T20:23:53.4974217+06:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="DoubleTestTest" storage="c:\users\александр\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="d1237ce2-a25b-3127-4572-a28fb21bc84d">
+      <Execution id="868b48c3-5141-402f-ba71-dc6c761b8a5e" />
+      <TestMethod codeBase="C:/Users/Александр/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.SinTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoubleTestTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="d1237ce2-a25b-3127-4572-a28fb21bc84d" executionId="868b48c3-5141-402f-ba71-dc6c761b8a5e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="868b48c3-5141-402f-ba71-dc6c761b8a5e" testId="d1237ce2-a25b-3127-4572-a28fb21bc84d" testName="DoubleTestTest" computerName="ALEXANDR" duration="00:00:00.0253081" startTime="2013-07-01T20:23:53.1754033+06:00" endTime="2013-07-01T20:23:53.4654199+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="868b48c3-5141-402f-ba71-dc6c761b8a5e">
+    </UnitTestResult>
+  </Results>
+</TestRun>

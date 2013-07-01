@@ -15,7 +15,6 @@ namespace TestgGraphrez
         {
             Logarifm2 calc = new Logarifm2();
             Assert.AreEqual(1, calc.Calculate(2), 0.001);
-
         }
 
     }

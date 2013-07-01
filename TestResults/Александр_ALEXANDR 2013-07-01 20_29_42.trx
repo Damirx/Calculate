@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6fa0acbf-3064-46c5-b8f7-2ab56fa0cc89" name="Александр@ALEXANDR 2013-07-01 20:29:42" runUser="ALEXANDR\Александр" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="0307d9ab-2183-4378-b68a-427592b18606">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Александр_ALEXANDR 2013-07-01 20_29_42">
+      <DeploymentItem filename="C:\Users\Александр\Documents\GitHub\Calculate\graphrez\bin\Debug\graphrez.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-01T20:29:42.7263965+06:00" queuing="2013-07-01T20:29:42.7433974+06:00" start="2013-07-01T20:29:42.7553981+06:00" finish="2013-07-01T20:29:43.1154187+06:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="DoubleTest" storage="c:\users\александр\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="9fdd6906-f56b-1058-a071-524a82b7a8ee">
+      <Execution id="e53c16a0-4ca7-4b6c-93b4-d00736dd4623" />
+      <TestMethod codeBase="C:/Users/Александр/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.ACosTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoubleTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9fdd6906-f56b-1058-a071-524a82b7a8ee" executionId="e53c16a0-4ca7-4b6c-93b4-d00736dd4623" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e53c16a0-4ca7-4b6c-93b4-d00736dd4623" testId="9fdd6906-f56b-1058-a071-524a82b7a8ee" testName="DoubleTest" computerName="ALEXANDR" duration="00:00:00.0506736" startTime="2013-07-01T20:29:42.7653987+06:00" endTime="2013-07-01T20:29:43.0894172+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e53c16a0-4ca7-4b6c-93b4-d00736dd4623">
+      <Output>
+        <ErrorInfo>
+          <Message>Ошибка в Assert.AreEqual. Между ожидаемым значением &lt;0,841&gt; и фактическим значением &lt;1,85081571768093&gt; требуется разница не более чем &lt;0,001&gt;. </Message>
+          <StackTrace>   в TestgGraphrez.ACosTest.DoubleTest() в C:\Users\Александр\Documents\GitHub\Calculate\TestgGraphrez\ACosTest.cs:строка 17
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

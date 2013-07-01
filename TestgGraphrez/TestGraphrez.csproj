@@ -64,7 +64,12 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACosTest.cs" />
     <Compile Include="AsinTest.cs" />
+    <Compile Include="AtgTest.cs" />
+    <Compile Include="ConvertToGradTest.cs" />
+    <Compile Include="ConvertToRadTest.cs" />
+    <Compile Include="CosTest.cs" />
     <Compile Include="ExpTest.cs" />
     <Compile Include="FactorialTest.cs" />
     <Compile Include="Logarifm10Test.cs" />
@@ -75,7 +80,10 @@
     <Compile Include="AdditionTest.cs" />
     <Compile Include="DivisionTest.cs" />
     <Compile Include="SubstractionTest.cs" />
-    <Compile Include="Sintest.cs" />
+    <Compile Include="SinTest.cs" />
+    <Compile Include="TgTest.cs" />
+    <Compile Include="ToXTest.cs" />
+    <Compile Include="ToYTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\graphrez\graphrez.csproj">

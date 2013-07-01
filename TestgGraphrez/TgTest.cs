@@ -13,9 +13,13 @@ namespace TestgGraphrez
         [TestMethod]
         public void DoubleTest()
         {
-            Tangens Calc = new Tangens();
-            Assert.AreEqual(-2.185,Calc.Calculate(2),0.001);
-            Assert.AreEqual(1.157, Calc.Calculate(4), 0.001);
+            Tangens calc = new Tangens();
+            Assert.AreEqual(1.557, calc.Calculate(1.0), 0.001);
+            Assert.AreEqual(-2.185, calc.Calculate(2.0), 0.001);
+            Assert.AreEqual(1.157, calc.Calculate(4.0), 0.001);
+            Assert.AreEqual(-0.291, calc.Calculate(6.0), 0.001);
+            Assert.AreEqual(-6.799, calc.Calculate(8.0), 0.001);
+            Assert.AreEqual(0.648, calc.Calculate(10.0), 0.001);
         }
     }
 }
