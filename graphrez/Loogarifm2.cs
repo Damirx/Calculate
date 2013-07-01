@@ -5,7 +5,7 @@ using System.Text;
 
 namespace graphrez
 {
-    class Logarifm2:Operation
+   public class Logarifm2:Operation
     {
         public override double Calculate(double arg1)
         {
