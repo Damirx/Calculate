@@ -67,6 +67,10 @@
     <Compile Include="AsinTest.cs" />
     <Compile Include="ExpTest.cs" />
     <Compile Include="FactorialTest.cs" />
+    <Compile Include="Logarifm10Test.cs" />
+    <Compile Include="LogyTest.cs" />
+    <Compile Include="Loogarifm2Test.cs" />
+    <Compile Include="NaturalLogarifmTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdditionTest.cs" />
     <Compile Include="DivisionTest.cs" />
