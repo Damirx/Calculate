@@ -64,11 +64,13 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsinTest.cs" />
     <Compile Include="ExpTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AdditionTest.cs" />
     <Compile Include="DivisionTest.cs" />
     <Compile Include="SubstractionTest.cs" />
+    <Compile Include="Sintest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\graphrez\graphrez.csproj">

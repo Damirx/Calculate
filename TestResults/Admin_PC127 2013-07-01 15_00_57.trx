@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1d9398c1-0036-48be-9c89-8c57b6a3d290" name="Admin@PC127 2013-07-01 15:00:57" runUser="pc127\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="0307d9ab-2183-4378-b68a-427592b18606">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_PC127 2013-07-01 15_00_57">
+      <DeploymentItem filename="C:\Users\Admin\Documents\GitHub\Calculate\graphrez\bin\Debug\graphrez.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-01T15:00:57.4216113+06:00" queuing="2013-07-01T15:01:03.7239718+06:00" start="2013-07-01T15:01:04.1479960+06:00" finish="2013-07-01T15:01:31.8625812+06:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PC127" outcome="Error" timestamp="2013-07-01T15:01:31.8605811+06:00">
+        <Text>Неожиданный выход из тестового хост-процесса.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="DoubleTest" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="4d211943-eeb5-052a-2994-2a3ea4e7421c">
+      <Execution id="88d92d72-efee-453f-b8be-22579a437200" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.SinTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoubleTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4d211943-eeb5-052a-2994-2a3ea4e7421c" executionId="88d92d72-efee-453f-b8be-22579a437200" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="88d92d72-efee-453f-b8be-22579a437200" testId="4d211943-eeb5-052a-2994-2a3ea4e7421c" testName="DoubleTest" computerName="PC127" duration="00:00:26.8965383" startTime="2013-07-01T15:01:04.9650428+06:00" endTime="2013-07-01T15:01:31.8615811+06:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88d92d72-efee-453f-b8be-22579a437200">
+    </UnitTestResult>
+  </Results>
+</TestRun>
