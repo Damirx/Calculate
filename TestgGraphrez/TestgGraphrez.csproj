@@ -47,6 +47,13 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTest3.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\graphrez\graphrez.csproj">
+      <Project>{008B955C-BAB7-49F0-B253-0837A8E5181C}</Project>
+      <Name>graphrez</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

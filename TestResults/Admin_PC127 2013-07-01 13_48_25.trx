@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="12a1bd92-4afb-466b-b091-e0f4e8e472b9" name="Admin@PC127 2013-07-01 13:48:25" runUser="pc127\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="0307d9ab-2183-4378-b68a-427592b18606">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_PC127 2013-07-01 13_48_25" />
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-01T13:48:25.6075692+07:00" queuing="2013-07-01T13:48:27.3906712+07:00" start="2013-07-01T13:48:27.4866767+07:00" finish="2013-07-01T13:48:28.2927228+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestMethod1" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="35ad0d10-4ca8-282d-6b17-32c220db3721">
+      <Execution id="1e0b6d39-2511-49b0-8ddd-6d7244030bbd" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.UnitTest1, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod1" />
+    </UnitTest>
+    <UnitTest name="TestMethod2" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="b3a89354-f0e5-f6c8-4026-7b6284e53693">
+      <Execution id="3cf7e168-3b7e-4169-93f5-df260f8d7d2a" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.UnitTest1, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestMethod2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="35ad0d10-4ca8-282d-6b17-32c220db3721" executionId="1e0b6d39-2511-49b0-8ddd-6d7244030bbd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3a89354-f0e5-f6c8-4026-7b6284e53693" executionId="3cf7e168-3b7e-4169-93f5-df260f8d7d2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1e0b6d39-2511-49b0-8ddd-6d7244030bbd" testId="35ad0d10-4ca8-282d-6b17-32c220db3721" testName="TestMethod1" computerName="PC127" duration="00:00:00.0896440" startTime="2013-07-01T13:48:27.7316907+07:00" endTime="2013-07-01T13:48:28.2077179+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1e0b6d39-2511-49b0-8ddd-6d7244030bbd">
+      <Output>
+        <ErrorInfo>
+          <Message>Ошибка в Assert.AreEqual. Между ожидаемым значением &lt;3&gt; и фактическим значением &lt;6&gt; требуется разница не более чем &lt;0,001&gt;. </Message>
+          <StackTrace>   в TestgGraphrez.UnitTest1.TestMethod1() в C:\Users\Admin\Documents\GitHub\Calculate\TestgGraphrez\UnitTest1.cs:строка 16
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3cf7e168-3b7e-4169-93f5-df260f8d7d2a" testId="b3a89354-f0e5-f6c8-4026-7b6284e53693" testName="TestMethod2" computerName="PC127" duration="00:00:00.0013837" startTime="2013-07-01T13:48:28.2157184+07:00" endTime="2013-07-01T13:48:28.2227188+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3cf7e168-3b7e-4169-93f5-df260f8d7d2a">
+    </UnitTestResult>
+  </Results>
+</TestRun>
