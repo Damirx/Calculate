@@ -25,10 +25,6 @@ namespace graphrez
                     return new Arcsinus();
                 case "Arccos":
                     return new Arccos();
-                case "Arccotang":
-                    return new Actg();
-                case "Ctang":
-                    return new Ctg();
                 case "Arctang":
                     return new Arctang();
                 case "Exp":

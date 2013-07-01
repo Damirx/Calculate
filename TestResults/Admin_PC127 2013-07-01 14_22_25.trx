@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="3eaaf758-2407-4a85-9844-3cd641169228" name="Admin@PC127 2013-07-01 14:22:25" runUser="pc127\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="0307d9ab-2183-4378-b68a-427592b18606">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_PC127 2013-07-01 14_22_25">
+      <DeploymentItem filename="C:\Users\Admin\Documents\GitHub\Calculate\graphrez\bin\Debug\graphrez.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-01T14:22:25.8267079+07:00" queuing="2013-07-01T14:22:34.5822087+07:00" start="2013-07-01T14:22:34.9142277+07:00" finish="2013-07-01T14:23:37.1047848+07:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="6" executed="2" passed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="4" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="PC127" outcome="Error" timestamp="2013-07-01T14:23:37.0997845+07:00">
+        <Text>Неожиданный выход из тестового хост-процесса.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestDooble" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="bbe9b431-e740-0447-28f5-5e07af1a265f">
+      <Execution id="3bb8ae45-a2ce-42e7-b3e5-c70df0efe9ec" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.AdditionTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestDooble" />
+    </UnitTest>
+    <UnitTest name="TestInt" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="04443e7f-f9b7-21a8-cf7e-0b125466d972">
+      <Execution id="1fc92ca2-a6b4-428a-99a0-f5b047afb663" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.AdditionTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestInt" />
+    </UnitTest>
+    <UnitTest name="TestInt" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="20fd104c-c5d0-78c6-4469-6f5fac7f20d2">
+      <Execution id="1f5e3245-9f7e-41d5-895d-92dc51242444" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.DivisionTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestInt" />
+    </UnitTest>
+    <UnitTest name="Testdooble" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="8c874cdf-5c70-2c1b-54b3-d6e3235222b0">
+      <Execution id="d06e718e-e060-4d90-854c-914ba8a1022d" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.ExpTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Testdooble" />
+    </UnitTest>
+    <UnitTest name="TestFloat" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="2da0da56-edcd-1076-a340-0dc90ca1d00a">
+      <Execution id="45ffdec0-6f54-403f-a5c3-147397b0d7b5" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.DivisionTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFloat" />
+    </UnitTest>
+    <UnitTest name="TestInt" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="0a28b335-9118-2e90-fc31-af7a9e18fd90">
+      <Execution id="cc2d0d9b-3d9a-4e86-bf46-f10db485f062" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.SubstractionTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestInt" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="04443e7f-f9b7-21a8-cf7e-0b125466d972" executionId="1fc92ca2-a6b4-428a-99a0-f5b047afb663" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a28b335-9118-2e90-fc31-af7a9e18fd90" executionId="cc2d0d9b-3d9a-4e86-bf46-f10db485f062" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="20fd104c-c5d0-78c6-4469-6f5fac7f20d2" executionId="1f5e3245-9f7e-41d5-895d-92dc51242444" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2da0da56-edcd-1076-a340-0dc90ca1d00a" executionId="45ffdec0-6f54-403f-a5c3-147397b0d7b5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c874cdf-5c70-2c1b-54b3-d6e3235222b0" executionId="d06e718e-e060-4d90-854c-914ba8a1022d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bbe9b431-e740-0447-28f5-5e07af1a265f" executionId="3bb8ae45-a2ce-42e7-b3e5-c70df0efe9ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="1fc92ca2-a6b4-428a-99a0-f5b047afb663" testId="04443e7f-f9b7-21a8-cf7e-0b125466d972" testName="TestInt" computerName="PC127" duration="00:00:00.0680138" startTime="2013-07-01T14:22:35.3482525+07:00" endTime="2013-07-01T14:22:37.2913636+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1fc92ca2-a6b4-428a-99a0-f5b047afb663">
+    </UnitTestResult>
+    <UnitTestResult executionId="cc2d0d9b-3d9a-4e86-bf46-f10db485f062" testId="0a28b335-9118-2e90-fc31-af7a9e18fd90" testName="TestInt" computerName="PC127" duration="00:00:59.7634183" startTime="2013-07-01T14:22:37.3403664+07:00" endTime="2013-07-01T14:23:37.1037847+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc2d0d9b-3d9a-4e86-bf46-f10db485f062">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f5e3245-9f7e-41d5-895d-92dc51242444" testId="20fd104c-c5d0-78c6-4469-6f5fac7f20d2" testName="TestInt" computerName="PC127" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f5e3245-9f7e-41d5-895d-92dc51242444">
+    </UnitTestResult>
+    <UnitTestResult executionId="45ffdec0-6f54-403f-a5c3-147397b0d7b5" testId="2da0da56-edcd-1076-a340-0dc90ca1d00a" testName="TestFloat" computerName="PC127" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="45ffdec0-6f54-403f-a5c3-147397b0d7b5">
+    </UnitTestResult>
+    <UnitTestResult executionId="d06e718e-e060-4d90-854c-914ba8a1022d" testId="8c874cdf-5c70-2c1b-54b3-d6e3235222b0" testName="Testdooble" computerName="PC127" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d06e718e-e060-4d90-854c-914ba8a1022d">
+    </UnitTestResult>
+    <UnitTestResult executionId="3bb8ae45-a2ce-42e7-b3e5-c70df0efe9ec" testId="bbe9b431-e740-0447-28f5-5e07af1a265f" testName="TestDooble" computerName="PC127" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3bb8ae45-a2ce-42e7-b3e5-c70df0efe9ec">
+    </UnitTestResult>
+  </Results>
+</TestRun>

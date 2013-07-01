@@ -6,8 +6,8 @@ using System.Text;
 namespace graphrez
 {
      public class Addition:BinaryOperation
-
-    {
+     {
+         
         public override double Calculate(double arg1, double arg2)
         {
             return arg1 + arg2;

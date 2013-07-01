@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "graphrez", "graphrez\graphrez.csproj", "{008B955C-BAB7-49F0-B253-0837A8E5181C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestgGraphrez", "TestgGraphrez\TestgGraphrez.csproj", "{E0D00B72-C5F1-48A0-B0AA-14C79257F258}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGraphrez", "TestgGraphrez\TestGraphrez.csproj", "{E0D00B72-C5F1-48A0-B0AA-14C79257F258}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D25DFFFC-5769-44BE-A8FC-F6FC022F6F23}"
 	ProjectSection(SolutionItems) = preProject

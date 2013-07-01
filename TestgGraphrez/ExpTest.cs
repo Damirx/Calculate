@@ -3,15 +3,22 @@ using System.Text;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using graphrez;
+
 
 namespace TestgGraphrez
 {
     [TestClass]
-    public class UnitTest2
+    public class ExpTest
     {
         [TestMethod]
-        public void TestMethod1()
+    
+        public void Testdooble()
         {
+            Exp calc = new Exp();
+
+            Assert.AreEqual(2.718, calc.Calculate(1), 0.001);
+            
         }
     }
 }
