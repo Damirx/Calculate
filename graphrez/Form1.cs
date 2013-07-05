@@ -143,8 +143,7 @@ namespace graphrez
                 {
                     throw new Exception("Не введен второй аргумент!");
                 }
-                BinaryOperation calc = BinaryCalculatorsFactory.Create(operation);
-                richTextBox3.Text = calc.Calculate(firstArg, secondArg).ToString();
+
             }
             else
             {
@@ -176,6 +175,52 @@ namespace graphrez
         private void button35_Click(object sender, EventArgs e) //Перевод радиан в градусы
         {
             CommonCalculation("(perevod_vGrad)", false);
+        }
+
+
+
+        private void SortCommonCalculation(string sortname)
+    {
+            List<int> intArray = new List<int>();
+            try
+            {
+            List<string> strArray;
+            strArray=richTextBox1.Text.Split(',').ToList();
+                for (int i=0;i< (strArray.Count); i++)
+                {
+                    intArray.Add(Convert.ToInt32(strArray[i]));
+                }
+            }
+            catch (Exception e)
+                {
+                    throw new Exception("не введена числовая последовательность");
+                }
+
+            Sorter calc = SorterFactory.CreateSort(sortname);
+            string result = null;
+            for (int i = 0; i < (intArray.Count); i++)
+            {
+                if (i==0) result = result +intArray[i] ;
+                else result = result +  "," + intArray[i] ;
+            }
+            richTextBox3.Text = result;    
+
+
+    }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            SortCommonCalculation("Sort1");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SortCommonCalculation("Sort2");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            SortCommonCalculation("Sort3");
         }
     }
 

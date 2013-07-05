@@ -60,6 +60,9 @@
             this.button37 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label5
@@ -69,7 +72,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 13);
             this.label5.TabIndex = 8;
-            this.label5.Text = "V 2.00";
+            this.label5.Text = "V 2.02";
             // 
             // label6
             // 
@@ -374,11 +377,44 @@
             this.label3.TabIndex = 56;
             this.label3.Text = "Результат вычислений";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(353, 215);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 34);
+            this.button1.TabIndex = 59;
+            this.button1.Text = "Sort3";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(353, 135);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(48, 34);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "Sort1";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(353, 175);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(48, 34);
+            this.button3.TabIndex = 57;
+            this.button3.Text = "Sort2";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(423, 325);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button37);
@@ -452,6 +488,9 @@
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
 
 
 
