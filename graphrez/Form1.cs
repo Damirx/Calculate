@@ -197,6 +197,7 @@ namespace graphrez
                 }
 
             Sorter calc = SorterFactory.CreateSort(sortname);
+            intArray = calc.sort(intArray);
             string result = null;
             for (int i = 0; i < (intArray.Count); i++)
             {

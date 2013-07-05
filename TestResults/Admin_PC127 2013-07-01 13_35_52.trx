@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="498ab361-6c9c-4d31-a288-2afaaf579f56" name="Admin@PC127 2013-07-01 13:35:52" runUser="pc127\Admin" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Локальные" id="0307d9ab-2183-4378-b68a-427592b18606">
+    <Description>Это - параметры по умолчанию для локального тестового запуска.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Admin_PC127 2013-07-01 13_35_52">
+      <DeploymentItem filename="C:\Users\Admin\Documents\GitHub\Calculate\graphrez\bin\Debug\graphrez.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-07-01T13:35:52.2849264+07:00" queuing="2013-07-01T13:35:52.5089393+07:00" start="2013-07-01T13:35:52.7089507+07:00" finish="2013-07-01T13:35:53.2679827+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestFloat" storage="c:\users\admin\documents\github\calculate\testggraphrez\bin\debug\testggraphrez.dll" id="2da0da56-edcd-1076-a340-0dc90ca1d00a">
+      <Execution id="f5ad7951-1eaa-4c98-b2e9-6852e5192848" />
+      <TestMethod codeBase="C:/Users/Admin/Documents/GitHub/Calculate/TestgGraphrez/bin/Debug/TestgGraphrez.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestgGraphrez.DivisionTest, TestgGraphrez, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestFloat" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Отсутствующие в списке результаты" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2da0da56-edcd-1076-a340-0dc90ca1d00a" executionId="f5ad7951-1eaa-4c98-b2e9-6852e5192848" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f5ad7951-1eaa-4c98-b2e9-6852e5192848" testId="2da0da56-edcd-1076-a340-0dc90ca1d00a" testName="TestFloat" computerName="PC127" duration="00:00:00.0126950" startTime="2013-07-01T13:35:52.7959557+07:00" endTime="2013-07-01T13:35:53.1359751+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5ad7951-1eaa-4c98-b2e9-6852e5192848">
+    </UnitTestResult>
+  </Results>
+</TestRun>
