@@ -9,19 +9,22 @@ namespace graphrez
     {
         public override List<int> sort(List<int> intArray)
         {
-            List <int> helper = new List<int>();
-            
-            for (int i = 0; i < intArray.Count;i++ )
+            int helper;
+            for (int j = 0; j < intArray.Count; j++)
             {
-                if (i == ((intArray.Count)-1)) break;
-                if (intArray[i] > intArray[i+1])
+                for (int i = 0; i < intArray.Count; i++)
                 {
-                    helper[i] = intArray[i+1];
-                    helper[i+1] = intArray[i];
-                }
+                    if (i == ((intArray.Count) - 1)) break;
+                    if (intArray[i] > intArray[i + 1])
+                    {
+                        helper = intArray[i];
+                        intArray[i] = intArray[i + 1];
+                        intArray[i + 1] = helper;
+                    }
 
+                }
             }
-            return helper;
+            return intArray;
         }
 
     }
