@@ -92,6 +92,7 @@
     <Compile Include="Sort2.cs" />
     <Compile Include="Sort3.cs" />
     <Compile Include="Sort4.cs" />
+    <Compile Include="Sort5.cs" />
     <Compile Include="Sorter.cs" />
     <Compile Include="SorterFactory.cs" />
     <Compile Include="Sqr.cs" />

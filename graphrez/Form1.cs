@@ -228,6 +228,11 @@ namespace graphrez
         {
             SortCommonCalculation("Sort4");
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SortCommonCalculation("Sort5");
+        }
     }
 
 
