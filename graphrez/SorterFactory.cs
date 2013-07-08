@@ -17,6 +17,8 @@ namespace graphrez
                     return new Sort2();
                 case "Sort3":
                     return new Sort3();
+                case "Sort4":
+                    return new Sort4();
                 default:
                     throw new Exception("Unknown operration");
             }
